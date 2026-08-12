@@ -1,0 +1,684 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- =========================================================
+     SERVICES HERO
+========================================================= -->
+
+<section class="page-header services-header">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <span class="eyebrow">
+                    What We Offer
+                </span>
+
+                <h1>
+                    Services Built Around
+                    <span class="text-primary">Your Next Move.</span>
+                </h1>
+
+                <p class="page-header-text">
+                    From international recruitment and career mobility
+                    to corporate travel, tourism and destination support,
+                    M&amp;L Upsurge Limited helps individuals and
+                    organizations move with confidence.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="{% url 'contact' %}" class="btn btn-primary">
+                        Get Started
+                        <span class="ms-2">→</span>
+                    </a>
+
+                    <a href="#services" class="btn btn-outline-primary">
+                        Explore Services
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="py-lg-12 py-8 services-intro">
+
+    <div class="container">
+
+        <div class="row align-items-end gy-4">
+
+            <div class="col-lg-7">
+
+                <span class="eyebrow">
+                    Our Expertise
+                </span>
+
+                <h2 class="section-title mt-2 mb-3">
+                    Everything You Need to
+                    <span class="text-primary">Move Forward.</span>
+                </h2>
+
+            </div>
+
+            <div class="col-lg-5">
+
+                <p class="mb-0 text-muted section-lead">
+                    We bring recruitment, travel, mobility and
+                    destination services together under one trusted
+                    partner, giving our clients practical support
+                    from planning to execution.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="pb-lg-12 pb-8 services-section"
+         id="services">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                 SERVICE 1
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="service-card service-card-featured h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Careers &amp; Mobility
+                        </span>
+
+                        <h3>
+                            International Recruitment
+                        </h3>
+
+                        <p>
+                            We connect qualified candidates with
+                            employment opportunities while providing
+                            practical support throughout the recruitment
+                            and mobility process.
+                        </p>
+
+                        <ul class="service-list">
+
+                            <li>Job matching and placement</li>
+
+                            <li>Employer and opportunity coordination</li>
+
+                            <li>Documentation guidance</li>
+
+                            <li>Visa and relocation support</li>
+
+                            <li>Pre-departure assistance</li>
+
+                        </ul>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link">
+
+                            Talk to a Recruitment Specialist
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SERVICE 2
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Business Mobility
+                        </span>
+
+                        <h3>
+                            Corporate Travel
+                        </h3>
+
+                        <p>
+                            Efficient travel arrangements for
+                            businesses, executives, teams and
+                            organizations travelling locally or
+                            internationally.
+                        </p>
+
+                        <ul class="service-list">
+
+                            <li>Flight reservations</li>
+
+                            <li>Hotel and accommodation bookings</li>
+
+                            <li>Airport transfers</li>
+
+                            <li>Conference and business travel</li>
+
+                            <li>Corporate travel planning</li>
+
+                        </ul>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link">
+
+                            Plan Your Business Trip
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SERVICE 3
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="service-card compact h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-compass-fill"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Explore
+                        </span>
+
+                        <h3>
+                            Travel &amp; Tourism
+                        </h3>
+
+                        <p>
+                            Carefully planned travel experiences for
+                            individuals, families, groups and
+                            organizations.
+                        </p>
+
+                        <ul class="service-list">
+
+                            <li>Domestic and international tours</li>
+
+                            <li>Holiday packages</li>
+
+                            <li>Group excursions</li>
+
+                            <li>Educational tours</li>
+
+                            <li>Safaris and cultural experiences</li>
+
+                        </ul>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link">
+
+                            Plan Your Journey
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SERVICE 4
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="service-card compact h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            04
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Movement &amp; Operations
+                        </span>
+
+                        <h3>
+                            Logistics &amp; Transport
+                        </h3>
+
+                        <p>
+                            Practical transport and logistics support
+                            designed to make movement simpler and more
+                            coordinated.
+                        </p>
+
+                        <ul class="service-list">
+
+                            <li>Logistics coordination</li>
+
+                            <li>Corporate transport</li>
+
+                            <li>Shuttle services</li>
+
+                            <li>Destination management</li>
+
+                            <li>Travel support solutions</li>
+
+                        </ul>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link">
+
+                            Discuss Your Requirements
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SERVICE 5
+            ================================================== -->
+
+            <div class="col-lg-4">
+
+                <div class="service-card compact h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            05
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-clock-history"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Professional Guidance
+                        </span>
+
+                        <h3>
+                            Recruitment Advisory
+                        </h3>
+
+                        <p>
+                            Practical guidance for candidates navigating
+                            job opportunities, contracts and the
+                            recruitment process.
+                        </p>
+
+                        <ul class="service-list">
+
+                            <li>Job offer guidance</li>
+
+                            <li>Contract review support</li>
+
+                            <li>Documentation guidance</li>
+
+                            <li>Recruitment process support</li>
+
+                            <li>Candidate consultations</li>
+
+                        </ul>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link">
+
+                            Speak With Our Team
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SERVICE 6
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="service-card service-card-wide h-100">
+
+                    <div class="service-card-top">
+
+                        <div class="service-number">
+                            06
+                        </div>
+
+                        <div class="service-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-label">
+                            Arrive With Confidence
+                        </span>
+
+                        <h3>
+                            Destination Services
+                        </h3>
+
+                        <p>
+                            Support doesn't stop when you arrive.
+                            We help coordinate essential destination
+                            arrangements so your transition is smooth,
+                            organized and comfortable.
+                        </p>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <ul class="service-list mb-0">
+
+                                    <li>Airport transfers</li>
+
+                                    <li>Accommodation support</li>
+
+                                    <li>Local transport</li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <ul class="service-list mb-0">
+
+                                    <li>Documentation coordination</li>
+
+                                    <li>Destination assistance</li>
+
+                                    <li>Arrival support</li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                        <a href="{% url 'contact' %}"
+                           class="service-link mt-4">
+
+                            Get Destination Support
+                            <span>→</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW WE WORK
+========================================================= -->
+
+<section class="py-lg-12 py-8 process-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-7 text-center">
+
+                <span class="eyebrow justify-content-center d-flex">
+                    Our Approach
+                </span>
+
+                <h2 class="section-title mt-2 mb-3">
+                    Simple. Professional. With You at Every Step.
+                </h2>
+
+                <p class="text-muted section-lead">
+                    We make complex recruitment and mobility processes
+                    easier by providing clear guidance and practical
+                    support from the first conversation to the final
+                    destination.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 mt-5">
+
+            <div class="col-md-4">
+
+                <div class="process-step">
+
+                    <div class="process-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        We listen to your goals, requirements and
+                        circumstances before recommending the right
+                        solution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="process-step">
+
+                    <div class="process-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Coordinate
+                    </h3>
+
+                    <p>
+                        Our team coordinates the relevant recruitment,
+                        travel, documentation or mobility services
+                        around your needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="process-step">
+
+                    <div class="process-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Support
+                    </h3>
+
+                    <p>
+                        We remain available throughout the journey,
+                        helping you move forward with greater confidence.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="services-cta py-lg-12 py-8">
+
+    <div class="container">
+
+        <div class="services-cta-box">
+
+            <div class="row align-items-center gy-4">
+
+                <div class="col-lg-8">
+
+                    <span class="eyebrow">
+                        Let's Work Together
+                    </span>
+
+                    <h2>
+                        Ready to Make Your
+                        <span>Next Move?</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you're looking for and our team
+                        will help you identify the right service and
+                        next steps.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn-primary btn-lg">
+
+                        Talk to Us
+                        <span class="ms-2">→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

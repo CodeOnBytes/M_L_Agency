@@ -1,0 +1,1809 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>M&L Upsurge Limited – Global Travel & Mobility Solutions</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="M&L Upsurge Limited provides travel, mobility, logistics, corporate travel and destination services connecting people to global opportunities.">
+
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="{% static 'core/assets/images/favicon_io/apple-touch-icon.png' %}">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="{% static 'core/assets/images/favicon_io/favicon-32x32.png' %}">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="{% static 'core/assets/images/favicon_io/favicon-16x16.png' %}">
+
+    <link rel="manifest"
+          href="{% static 'core/assets/images/favicon_io/site.webmanifest' %}">
+
+    <link rel="stylesheet"
+          href="{% static 'core/assets/css/style.css' %}">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVBAR
+========================================================= -->
+
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand d-inline-flex gap-2 align-items-center lh-1"
+           href="{% url 'home' %}">
+
+            <img src="{% static 'core/assets/images/medicloud-logo.svg' %}"
+                 alt="M&L Upsurge Limited Logo"
+                 class="img-fluid logo">
+
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+
+                <li class="nav-item">
+                    <a href="#services"
+                       class="nav-link fw-semibold text-dark">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about"
+                       class="nav-link fw-semibold text-dark">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#howItWork"
+                       class="nav-link fw-semibold text-dark">
+                        How It Works
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#why-us"
+                       class="nav-link fw-semibold text-dark">
+                        Why Choose Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#faq"
+                       class="nav-link fw-semibold text-dark">
+                        FAQ
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="d-flex gap-3 align-items-center">
+
+                <a href="#contact"
+                   class="btn btn-primary">
+                    Get Started
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+
+<section class="hero-section overflow-hidden">
+
+    <div class="container pt-5">
+
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+
+            <div class="col-lg-6 hero-left">
+
+                <span class="badge text-bg-secondary rounded-pill fw-normal d-inline-flex gap-1">
+
+                    <span>
+                        <svg width="10"
+                             height="12"
+                             viewBox="0 0 10 12"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+
+                            <path
+                                d="M4.05417 7.90417L7.35 4.60833L6.51875 3.77708L4.05417 6.24167L2.82917 5.01667L1.99792 5.84792L4.05417 7.90417ZM4.66667 11.6667C3.31528 11.3264 2.19965 10.551 1.31979 9.34062C0.439931 8.13021 0 6.78611 0 5.30833V1.75L4.66667 0L9.33333 1.75V5.30833C9.33333 6.78611 8.8934 8.13021 8.01354 9.34062C7.13368 10.551 6.01806 11.3264 4.66667 11.6667ZM4.66667 10.4417C5.67778 10.1208 6.51389 9.47917 7.175 8.51667C7.83611 7.55417 8.16667 6.48472 8.16667 5.30833V2.55208L4.66667 1.23958L1.16667 2.55208V5.30833C1.16667 6.48472 1.49722 7.55417 2.15833 8.51667C2.81944 9.47917 3.65556 10.1208 4.66667 10.4417Z"
+                                fill="white" />
+
+                        </svg>
+                    </span>
+
+                    <span>Reliable Global Mobility Solutions</span>
+
+                </span>
+
+                <h1 class="display-3 my-4">
+                    Connecting People to Global Opportunities
+                </h1>
+
+                <p class="lead">
+                    M&L Upsurge Limited provides reliable travel, mobility,
+                    logistics, corporate travel and destination solutions
+                    designed to help individuals and businesses move,
+                    connect and grow locally and internationally.
+                </p>
+
+                <div class="mt-7 d-flex gap-3 flex-wrap">
+
+                    <a href="#contact"
+                       class="btn btn-primary">
+                        Get Started
+                    </a>
+
+                    <a href="#services"
+                       class="btn btn-outline-secondary">
+                        Explore Our Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Image -->
+
+            <div class="col-lg-6 d-flex justify-content-center hero-right">
+
+                <div class="position-relative">
+
+                    <img src="{% static 'core/assets/images/dr-img.png' %}"
+                         alt="M&L Upsurge Travel and Mobility Services"
+                         class="img-fluid">
+
+                    <div class="position-absolute top-25 start-0 ms-7 floating-badge">
+
+                        <span class="badge text-bg-secondary fw-normal rounded-pill p-4 py-3">
+                            Global Mobility
+                        </span>
+
+                    </div>
+
+                    <div class="position-absolute top-50 start-0 floating-badge">
+
+                        <span class="badge text-bg-secondary fw-normal rounded-pill p-4 py-3">
+                            Corporate Travel
+                        </span>
+
+                    </div>
+
+                    <div class="position-absolute top-25 end-0 mt-8 me-10 floating-badge">
+
+                        <span class="badge text-bg-primary fw-normal rounded-pill p-4 py-3">
+                            Travel & Logistics
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMPANY INTRODUCTION
+========================================================= -->
+
+<section class="bg-light py-7 clients-section overflow-hidden">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <div class="col-xl-4 clients-content">
+
+                <h2 class="mb-4">
+                    Your Gateway to Global Opportunities
+                </h2>
+
+                <p class="mb-0 small">
+                    We connect individuals, professionals, businesses and
+                    communities with travel, employment, education,
+                    tourism and mobility opportunities across borders.
+                </p>
+
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-6 client-logo">
+                <div>
+                    <h5>Travel</h5>
+                    <p class="small mb-0">
+                        Local & international travel solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-6 client-logo">
+                <div>
+                    <h5>Mobility</h5>
+                    <p class="small mb-0">
+                        Supporting people moving across borders.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-6 client-logo">
+                <div>
+                    <h5>Business</h5>
+                    <p class="small mb-0">
+                        Corporate travel and business support.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-3 col-md-6 client-logo">
+                <div>
+                    <h5>Logistics</h5>
+                    <p class="small mb-0">
+                        Reliable coordination and destination services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="py-lg-12 py-8 features-section overflow-hidden"
+         id="services">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-7">
+
+                <div class="text-center features-heading">
+
+                    <h2 class="display-6">
+                        Comprehensive Travel & Mobility Solutions
+                    </h2>
+
+                    <p class="mb-0">
+                        Professional services designed to make travel,
+                        relocation, business mobility and logistics
+                        simpler and more efficient.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-6 mt-4">
+
+
+            <!-- Service 1 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            International Mobility
+                        </h3>
+
+                        <p class="mb-0">
+                            International travel arrangements,
+                            employment travel support, visa guidance,
+                            relocation support and mobility coordination.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 2 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <rect x="3"
+                                      y="5"
+                                      width="18"
+                                      height="14"
+                                      rx="2"></rect>
+
+                                <path d="M16 3v4"></path>
+                                <path d="M8 3v4"></path>
+                                <path d="M3 10h18"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            Corporate Travel
+                        </h3>
+
+                        <p class="mb-0">
+                            Flight reservations, hotel bookings,
+                            airport transfers, executive travel,
+                            conferences and corporate travel planning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 3 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <path d="M3 12l18-9-7 18-3-7-8-2z"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            Travel & Tourism
+                        </h3>
+
+                        <p class="mb-0">
+                            Domestic and international tours, holidays,
+                            group excursions, educational tours,
+                            pilgrimages, safaris and cultural experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 4 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <rect x="3"
+                                      y="6"
+                                      width="18"
+                                      height="13"
+                                      rx="2"></rect>
+
+                                <path d="M8 6V4h8v2"></path>
+                                <path d="M12 11v4"></path>
+                                <path d="M10 13h4"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            Logistics & Transport
+                        </h3>
+
+                        <p class="mb-0">
+                            Logistics coordination, corporate transport,
+                            shuttle services, destination management
+                            and travel support solutions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 5 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <circle cx="12"
+                                        cy="12"
+                                        r="9"></circle>
+
+                                <path d="M12 7v5l3 3"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            Travel Advisory
+                        </h3>
+
+                        <p class="mb-0">
+                            Professional travel consultation,
+                            documentation support and practical guidance
+                            throughout the travel planning process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service 6 -->
+
+            <div class="col-xl-4 col-md-6 col-12 feature-card">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <div class="mb-6 feature-icon">
+
+                            <svg width="56"
+                                 height="56"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width=".75"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"></path>
+
+                                <path d="M9 12l2 2 4-4"></path>
+
+                            </svg>
+
+                        </div>
+
+                        <h3 class="h2 mb-4">
+                            Destination Services
+                        </h3>
+
+                        <p class="mb-0">
+                            Reliable support for airport transfers,
+                            accommodation, transport arrangements,
+                            documentation and destination coordination.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     HOW IT WORKS
+========================================================= -->
+
+<section class="py-lg-12 py-8 bg-secondary text-white how-section overflow-hidden"
+         id="howItWork">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center mb-10">
+
+            <div class="col-xl-8">
+
+                <div class="how-heading">
+
+                    <h2 class="display-6 text-white mb-4">
+                        Your Journey Starts in 3 Simple Steps
+                    </h2>
+
+                    <p class="mb-0 px-xl-10">
+                        From consultation to travel and destination support,
+                        M&L Upsurge Limited makes your journey easier,
+                        clearer and more organized.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row position-relative">
+
+
+            <!-- Step 1 -->
+
+            <div class="col-xl-4 col-md-6 col-12 how-step">
+
+                <div class="text-center">
+
+                    <span class="icon-shape how-number icon-xl rounded-circle bg-white text-dark border border-4 border-primary border-opacity-25 fw-bold fs-4">
+                        1
+                    </span>
+
+                    <div class="mt-6 mx-6">
+
+                        <h3 class="fs-2 text-white">
+                            Consult
+                        </h3>
+
+                        <p>
+                            Tell us about your travel, mobility,
+                            business or logistics requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 2 -->
+
+            <div class="col-xl-4 col-md-6 col-12 how-step">
+
+                <div class="text-center">
+
+                    <span class="icon-shape how-number icon-xl rounded-circle bg-white text-dark border border-4 border-primary border-opacity-25 fw-bold fs-4">
+                        2
+                    </span>
+
+                    <div class="mt-6 mx-6">
+
+                        <h3 class="fs-2 text-white">
+                            Plan
+                        </h3>
+
+                        <p>
+                            Our team coordinates the appropriate
+                            travel, accommodation, mobility and logistics
+                            solutions for your needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 3 -->
+
+            <div class="col-xl-4 col-md-6 col-12 how-step">
+
+                <div class="text-center">
+
+                    <span class="icon-shape how-number icon-xl rounded-circle bg-primary text-white border border-4 border-white fw-bold fs-4">
+                        3
+                    </span>
+
+                    <div class="mt-6 mx-6">
+
+                        <h3 class="fs-2 text-white">
+                            Travel & Connect
+                        </h3>
+
+                        <p>
+                            Move confidently while receiving dedicated
+                            support throughout your journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-12 mt-8 d-flex gap-3 justify-content-center how-buttons">
+
+                <a href="#contact"
+                   class="btn btn-primary">
+                    Get Started
+                </a>
+
+                <a href="#services"
+                   class="btn btn-white">
+                    View Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT US
+========================================================= -->
+
+<section class="py-lg-12 py-8 about-section overflow-hidden"
+         id="about">
+
+    <div class="container">
+
+        <div class="row gy-6 align-items-center">
+
+
+            <!-- Image -->
+
+            <div class="col-xl-7 col-12">
+
+                <div class="about-image-wrapper position-relative">
+
+                    <img src="{% static 'core/assets/images/about-img.png' %}"
+                         alt="M&L Upsurge Limited"
+                         class="img-fluid w-100 about-image">
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="col-xl-4 col-12">
+
+                <div class="mt-xl-8 about-content">
+
+                    <span class="small fw-semibold text-primary">
+                        ABOUT M&L UPSURGE LIMITED
+                    </span>
+
+                    <h2 class="display-6 mb-4 mt-2">
+                        Connecting People Beyond Borders
+                    </h2>
+
+                    <p class="lead">
+                        M&L Upsurge Limited is a dynamic Kenyan company
+                        dedicated to providing comprehensive travel,
+                        mobility, logistics and business support solutions.
+                    </p>
+
+                    <p>
+                        We help individuals, professionals, businesses and
+                        communities access opportunities locally and around
+                        the world through reliable, efficient and affordable
+                        services.
+                    </p>
+
+                    <ul class="list-unstyled mt-5">
+
+                        <li class="d-flex gap-2 align-items-center mb-3 about-item">
+
+                            <span class="about-check">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 24 24"
+                                     fill="currentColor"
+                                     class="text-success">
+
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1 15-5-5 1.4-1.4L11 14.2l5.6-5.6L18 10z"/>
+
+                                </svg>
+
+                            </span>
+
+                            <span>
+                                Reliable and customer-focused services
+                            </span>
+
+                        </li>
+
+                        <li class="d-flex gap-2 align-items-center mb-3 about-item">
+
+                            <span class="about-check">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 24 24"
+                                     fill="currentColor"
+                                     class="text-success">
+
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1 15-5-5 1.4-1.4L11 14.2l5.6-5.6L18 10z"/>
+
+                                </svg>
+
+                            </span>
+
+                            <span>
+                                Global network of partners and opportunities
+                            </span>
+
+                        </li>
+
+                        <li class="d-flex gap-2 align-items-center mb-3 about-item">
+
+                            <span class="about-check">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="20"
+                                     height="20"
+                                     viewBox="0 0 24 24"
+                                     fill="currentColor"
+                                     class="text-success">
+
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-1 15-5-5 1.4-1.4L11 14.2l5.6-5.6L18 10z"/>
+
+                                </svg>
+
+                            </span>
+
+                            <span>
+                                Professional support throughout your journey
+                            </span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VISION / MISSION
+========================================================= -->
+
+<section class="py-lg-12 py-8 bg-light overflow-hidden">
+
+    <div class="container">
+
+        <div class="row g-6">
+
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <span class="small fw-semibold text-primary">
+                            OUR VISION
+                        </span>
+
+                        <h2 class="display-6 mt-2 mb-4">
+                            Empowering Global Movement
+                        </h2>
+
+                        <p class="lead mb-0">
+                            To become a leading global mobility and travel
+                            solutions company that empowers people and
+                            businesses to explore opportunities beyond borders.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <span class="small fw-semibold text-primary">
+                            OUR MISSION
+                        </span>
+
+                        <h2 class="display-6 mt-2 mb-4">
+                            Making Global Opportunities Accessible
+                        </h2>
+
+                        <p class="lead mb-0">
+                            To provide professional, reliable and innovative
+                            travel, logistics and mobility services that enable
+                            individuals and organizations to access global
+                            opportunities safely and efficiently.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+========================================================= -->
+
+<section class="py-lg-12 py-8 features-section overflow-hidden"
+         id="why-us">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-7">
+
+                <div class="text-center features-heading">
+
+                    <span class="small fw-semibold text-primary">
+                        WHY M&L UPSURGE
+                    </span>
+
+                    <h2 class="display-6 mt-2">
+                        A Partner You Can Rely On
+                    </h2>
+
+                    <p class="mb-0">
+                        We combine professionalism, reliability and
+                        customer-focused service to create smooth
+                        travel and mobility experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-6 mt-4">
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Professional Team
+                        </h3>
+
+                        <p class="mb-0">
+                            Our experienced team is committed to delivering
+                            professional and dependable travel and mobility
+                            support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Customized Solutions
+                        </h3>
+
+                        <p class="mb-0">
+                            We tailor our services to match individual,
+                            corporate and organizational travel requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Global Connections
+                        </h3>
+
+                        <p class="mb-0">
+                            We work toward building strong relationships with
+                            airlines, employers, educational institutions and
+                            international service providers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Customer Focus
+                        </h3>
+
+                        <p class="mb-0">
+                            Every client receives dedicated support and
+                            practical solutions throughout their journey.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Integrity
+                        </h3>
+
+                        <p class="mb-0">
+                            We operate with accountability, professionalism
+                            and integrity in our relationships with clients
+                            and partners.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-xl-4 col-md-6">
+
+                <div class="card bg-light border-0 h-100">
+
+                    <div class="card-body p-8">
+
+                        <h3 class="h2 mb-4">
+                            Sustainable Growth
+                        </h3>
+
+                        <p class="mb-0">
+                            We are committed to responsible business practices
+                            that create opportunities for communities and
+                            support long-term growth.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CORE VALUES
+========================================================= -->
+
+<section class="py-lg-12 py-8 bg-secondary text-white overflow-hidden">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-xl-8">
+
+                <h2 class="display-6 text-white mb-4">
+                    Our Core Values
+                </h2>
+
+                <p>
+                    The principles that guide how we serve our clients,
+                    partners and communities.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 mt-5 text-center">
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Integrity</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Excellence</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Professionalism</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Reliability</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Customer Satisfaction</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Innovation</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Accountability</h4>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6">
+                <h4 class="text-white">Teamwork</h4>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="py-lg-12 py-8 bg-light faq-section overflow-hidden"
+         id="faq">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-7">
+
+                <div class="text-center mb-8 faq-heading">
+
+                    <h2 class="display-6">
+                        Frequently Asked Questions
+                    </h2>
+
+                    <p>
+                        Find answers to common questions about our travel,
+                        mobility and logistics services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="offset-xl-3 col-xl-6 col-12">
+
+                <div class="accordion faq-wrapper"
+                     id="accordionExample">
+
+
+                    <!-- FAQ 1 -->
+
+                    <div class="border mb-2 rounded-4 p-5 bg-white faq-item">
+
+                        <h2 class="h4 mb-0">
+
+                            <a href="#"
+                               class="text-reset d-flex justify-content-between align-items-center faq-toggle"
+                               data-bs-toggle="collapse"
+                               data-bs-target="#collapseOne"
+                               aria-expanded="true"
+                               aria-controls="collapseOne">
+
+                                What services does M&L Upsurge provide?
+
+                                <span class="chevron-arrow faq-icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="18"
+                                         height="18"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <path d="M6 9l6 6l6-6"></path>
+
+                                    </svg>
+
+                                </span>
+
+                            </a>
+
+                        </h2>
+
+                        <div id="collapseOne"
+                             class="accordion-collapse collapse show"
+                             data-bs-parent="#accordionExample">
+
+                            <div class="mt-3 faq-content">
+
+                                We provide international mobility and travel
+                                services, corporate travel solutions,
+                                tourism packages, logistics coordination,
+                                destination services and travel advisory support.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+
+                    <div class="border mb-2 rounded-4 p-5 bg-white faq-item">
+
+                        <h2 class="h4 mb-0">
+
+                            <a href="#"
+                               class="text-reset d-flex justify-content-between align-items-center faq-toggle"
+                               data-bs-toggle="collapse"
+                               data-bs-target="#collapseTwo"
+                               aria-expanded="false"
+                               aria-controls="collapseTwo">
+
+                                Do you support international travel?
+
+                                <span class="chevron-arrow faq-icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="18"
+                                         height="18"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <path d="M6 9l6 6l6-6"></path>
+
+                                    </svg>
+
+                                </span>
+
+                            </a>
+
+                        </h2>
+
+                        <div id="collapseTwo"
+                             class="accordion-collapse collapse"
+                             data-bs-parent="#accordionExample">
+
+                            <div class="mt-3 faq-content">
+
+                                Yes. We support individuals and organizations
+                                with international travel arrangements,
+                                mobility coordination, documentation support,
+                                relocation services and travel advisory.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+
+                    <div class="border mb-2 rounded-4 p-5 bg-white faq-item">
+
+                        <h2 class="h4 mb-0">
+
+                            <a href="#"
+                               class="text-reset d-flex justify-content-between align-items-center faq-toggle"
+                               data-bs-toggle="collapse"
+                               data-bs-target="#collapseThree"
+                               aria-expanded="false"
+                               aria-controls="collapseThree">
+
+                                Do you provide corporate travel services?
+
+                                <span class="chevron-arrow faq-icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="18"
+                                         height="18"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <path d="M6 9l6 6l6-6"></path>
+
+                                    </svg>
+
+                                </span>
+
+                            </a>
+
+                        </h2>
+
+                        <div id="collapseThree"
+                             class="accordion-collapse collapse"
+                             data-bs-parent="#accordionExample">
+
+                            <div class="mt-3 faq-content">
+
+                                Yes. Our corporate travel services include
+                                flight reservations, accommodation bookings,
+                                airport transfers, conference travel,
+                                executive travel and corporate travel planning.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+
+                    <div class="border mb-2 rounded-4 p-5 bg-white faq-item">
+
+                        <h2 class="h4 mb-0">
+
+                            <a href="#"
+                               class="text-reset d-flex justify-content-between align-items-center faq-toggle"
+                               data-bs-toggle="collapse"
+                               data-bs-target="#collapseFour"
+                               aria-expanded="false"
+                               aria-controls="collapseFour">
+
+                                Can you arrange tours and holidays?
+
+                                <span class="chevron-arrow faq-icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="18"
+                                         height="18"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <path d="M6 9l6 6l6-6"></path>
+
+                                    </svg>
+
+                                </span>
+
+                            </a>
+
+                        </h2>
+
+                        <div id="collapseFour"
+                             class="accordion-collapse collapse"
+                             data-bs-parent="#accordionExample">
+
+                            <div class="mt-3 faq-content">
+
+                                Yes. We support domestic and international
+                                holiday planning, group tours, educational
+                                tours, religious and pilgrimage travel,
+                                adventure trips, wildlife safaris and
+                                cultural exchange programs.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+
+                    <div class="border mb-2 rounded-4 p-5 bg-white faq-item">
+
+                        <h2 class="h4 mb-0">
+
+                            <a href="#"
+                               class="text-reset d-flex justify-content-between align-items-center faq-toggle"
+                               data-bs-toggle="collapse"
+                               data-bs-target="#collapseFive"
+                               aria-expanded="false"
+                               aria-controls="collapseFive">
+
+                                Do you provide logistics and transport support?
+
+                                <span class="chevron-arrow faq-icon">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="18"
+                                         height="18"
+                                         viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="2"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+
+                                        <path d="M6 9l6 6l6-6"></path>
+
+                                    </svg>
+
+                                </span>
+
+                            </a>
+
+                        </h2>
+
+                        <div id="collapseFive"
+                             class="accordion-collapse collapse"
+                             data-bs-parent="#accordionExample">
+
+                            <div class="mt-3 faq-content">
+
+                                Yes. Our logistics and support services
+                                include corporate transport arrangements,
+                                shuttle services, logistics coordination,
+                                airport transfers and destination management.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CALL TO ACTION
+========================================================= -->
+
+<section class="py-lg-12 py-8">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-9">
+
+                <div class="card bg-secondary border-0 text-white text-center">
+
+                    <div class="card-body p-8 p-lg-12">
+
+                        <h2 class="display-6 text-white mb-4">
+                            Ready to Explore New Opportunities?
+                        </h2>
+
+                        <p class="lead text-white-50 mb-6">
+                            Whether you're planning international travel,
+                            relocating, arranging corporate travel or
+                            exploring new destinations, M&L Upsurge Limited
+                            is ready to help.
+                        </p>
+
+                        <a href="#contact"
+                           class="btn btn-primary">
+                            Talk to Us
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="bg-secondary pt-lg-10 pt-8 text-white-50"
+        id="contact">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <!-- Company -->
+
+            <div class="col-lg-3 col-12">
+
+                <div>
+
+                    <h2 class="text-white">
+                        M&L Upsurge Limited
+                    </h2>
+
+                    <p>
+                        Connecting people and businesses to global
+                        opportunities through reliable travel, mobility,
+                        logistics and destination solutions.
+                    </p>
+
+                    <p class="fw-semibold text-white">
+                        "Your Gateway to Global Opportunities."
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="col-lg-3 col-6">
+
+                <div>
+
+                    <h3 class="text-white">
+                        Services
+                    </h3>
+
+                    <ul class="list-unstyled lh-lg">
+
+                        <li>
+                            <a href="#services"
+                               class="text-reset">
+                                International Mobility
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services"
+                               class="text-reset">
+                                Corporate Travel
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services"
+                               class="text-reset">
+                                Travel & Tourism
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#services"
+                               class="text-reset">
+                                Logistics & Transport
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Company -->
+
+            <div class="col-lg-3 col-6">
+
+                <div>
+
+                    <h3 class="text-white">
+                        Company
+                    </h3>
+
+                    <ul class="list-unstyled lh-lg">
+
+                        <li>
+                            <a href="#about"
+                               class="text-reset">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#why-us"
+                               class="text-reset">
+                                Why Choose Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#howItWork"
+                               class="text-reset">
+                                How It Works
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#faq"
+                               class="text-reset">
+                                FAQ
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="col-lg-3 col-12">
+
+                <div>
+
+                    <h3 class="text-white">
+                        Get in Touch
+                    </h3>
+
+                    <ul class="list-unstyled lh-lg">
+
+                        <li>
+                            Travel & Mobility Consultation
+                        </li>
+
+                        <li>
+                            Corporate Travel Support
+                        </li>
+
+                        <li>
+                            Logistics Coordination
+                        </li>
+
+                        <li>
+                            Destination Services
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Footer -->
+
+        <div class="row border-top py-4 mt-lg-10 mt-6 g-md-0 gy-2 small border-opacity-10 border-white">
+
+            <div class="col-md-8">
+
+                <p class="mb-0">
+                    © 2026 M&L Upsurge Limited.
+                    All rights reserved.
+                </p>
+
+                <p class="mb-0">
+                    Connecting People to Global Opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-4 d-flex flex-column flex-md-row justify-content-md-end">
+
+                <p class="mb-0">
+
+                    <span>
+                        Your Gateway to Global Opportunities.
+                    </span>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="{% static 'core/assets/js/main.js' %}"
+        type="module">
+</script>
+
+<script src="{% static 'core/assets/js/gsap.js' %}"
+        type="module">
+</script>
+
+<script src="{% static 'core/assets/js/navbar.js' %}"
+        type="module">
+</script>
+
+
+</body>
+
+</html>

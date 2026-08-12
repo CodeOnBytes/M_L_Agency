@@ -1,0 +1,839 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- =========================================================
+     HERO SECTION
+========================================================= -->
+<section class="hero-section position-relative overflow-hidden">
+    <div class="hero-pattern"></div>
+
+    <div class="container position-relative">
+        <div class="row align-items-center min-vh-75 py-8 py-lg-12">
+
+            <!-- Hero Content -->
+            <div class="col-lg-6">
+                <div class="hero-content">
+
+                    <span class="eyebrow mb-3 d-inline-flex">
+                        <span class="hero-dot"></span>
+                        International Recruitment & Mobility
+                    </span>
+
+                    <h1 class="hero-title">
+                        Your Next
+                        <span class="text-primary">Opportunity</span>
+                        Starts Here.
+                    </h1>
+
+                    <p class="hero-description">
+                        M&L Upsurge Limited connects talented people with
+                        meaningful employment, career and mobility
+                        opportunities in Kenya and beyond.
+                    </p>
+
+                    <div class="hero-actions d-flex flex-wrap gap-3 mt-5">
+
+                        <a href="{% url 'contact' %}"
+                           class="btn btn-primary btn-lg px-4">
+                            Find Your Opportunity
+                        </a>
+
+                        <a href="{% url 'contact' %}"
+                           class="btn btn-outline-primary btn-lg px-4">
+                            Hire Talent
+                        </a>
+
+                    </div>
+
+                    <!-- Trust Points -->
+                    <div class="hero-trust mt-6">
+
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="trust-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+
+                            <div>
+                                <strong>Professional Support</strong>
+                                <span>From application to placement</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3 mt-3">
+                            <div class="trust-icon">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+
+                            <div>
+                                <strong>Global Opportunities</strong>
+                                <span>Connecting talent beyond borders</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Hero Image -->
+            <div class="col-lg-6 mt-7 mt-lg-0">
+
+                <div class="hero-image-wrapper position-relative">
+
+                    <div class="hero-accent-circle"></div>
+
+                    <img src="{% static 'core/assets/images/hero-img.jpg' %}"
+                         alt="M&L Upsurge recruitment services"
+                         class="img-fluid hero-image">
+
+                    <!-- Floating Card -->
+                    <div class="hero-floating-card shadow-none">
+
+                        <div class="floating-icon">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+
+                        <div>
+                            <strong>New Opportunities</strong>
+                            <span>Start your journey today</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     QUICK INTRO
+========================================================= -->
+<section class="py-7 quick-intro-section bg-white">
+    <div class="container">
+
+        <div class="row g-4 g-lg-5">
+
+            <div class="col-lg-4">
+                <div class="quick-card">
+                    <div class="quick-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+
+                    <div>
+                        <h5>For Job Seekers</h5>
+                        <p>
+                            Discover career opportunities that match
+                            your skills, experience and ambitions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="quick-card">
+                    <div class="quick-icon">
+                        <i class="bi bi-building"></i>
+                    </div>
+
+                    <div>
+                        <h5>For Employers</h5>
+                        <p>
+                            Find capable and reliable talent to help
+                            your organization grow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="quick-card">
+                    <div class="quick-icon">
+                        <i class="bi bi-globe2"></i>
+                    </div>
+
+                    <div>
+                        <h5>Beyond Borders</h5>
+                        <p>
+                            Access recruitment and mobility solutions
+                            for opportunities across international markets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================================================
+     ABOUT / INTRODUCTION
+========================================================= -->
+<section class="py-lg-12 py-8 home-about overflow-hidden">
+
+    <div class="container">
+
+        <div class="row align-items-center g-7">
+
+            <!-- Image -->
+            <div class="col-lg-6">
+
+                <div class="home-about-image position-relative">
+
+                    <div class="about-image-shape"></div>
+
+                    <img src="{% static 'core/assets/images/about-img.jpg' %}"
+                         alt="M&L Upsurge Limited"
+                         class="img-fluid rounded-4 position-relative">
+
+                    <div class="experience-card">
+
+                        <strong>Trusted</strong>
+
+                        <span>
+                            Recruitment & Mobility
+                            Support
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="col-lg-6">
+
+                <span class="eyebrow">
+                    About M&L Upsurge
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Connecting People With
+                    <span class="text-primary">
+                        Possibilities
+                    </span>
+                </h2>
+
+                <p class="section-lead">
+                    M&L Upsurge Limited is a Kenyan international
+                    recruitment and mobility agency helping individuals,
+                    professionals and businesses access opportunities
+                    locally and around the world.
+                </p>
+
+                <p>
+                    We provide recruitment, placement, travel, mobility
+                    and business support solutions designed around the
+                    needs of our candidates and clients.
+                </p>
+
+                <div class="row g-3 mt-4">
+
+                    <div class="col-sm-6">
+                        <div class="check-feature">
+                            <span>✓</span>
+                            <strong>Candidate Focused</strong>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="check-feature">
+                            <span>✓</span>
+                            <strong>Professional Service</strong>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="check-feature">
+                            <span>✓</span>
+                            <strong>Global Connections</strong>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="check-feature">
+                            <span>✓</span>
+                            <strong>Reliable Support</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="{% url 'about' %}"
+                   class="btn btn-primary mt-5">
+                    Learn More About Us
+                    <span class="ms-2">→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+<section class="py-lg-12 py-8 bg-light services-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+                <span class="eyebrow">
+                    What We Do
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Recruitment & Mobility
+                    <span class="text-primary">
+                        Solutions
+                    </span>
+                </h2>
+
+                <p class="section-lead">
+                    Practical solutions designed to help people move
+                    forward and businesses find the right talent.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 g-lg-5 mt-6">
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-person-badge-fill"></i>
+                    </div>
+
+                    <span class="service-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Recruitment & Placement
+                    </h3>
+
+                    <p>
+                        We connect qualified candidates with suitable
+                        employment opportunities while helping employers
+                        identify the right talent.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Get Started <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-globe2"></i>
+                    </div>
+
+                    <span class="service-number">
+                        02
+                    </span>
+
+                    <h3>
+                        International Mobility
+                    </h3>
+
+                    <p>
+                        Supporting individuals exploring international
+                        employment, relocation and mobility opportunities.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Explore Opportunities <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-airplane-fill"></i>
+                    </div>
+
+                    <span class="service-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Travel & Mobility Support
+                    </h3>
+
+                    <p>
+                        Practical support for candidates and businesses
+                        navigating travel and mobility requirements.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Talk to Us <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-buildings-fill"></i>
+                    </div>
+
+                    <span class="service-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Corporate Recruitment
+                    </h3>
+
+                    <p>
+                        Recruitment solutions for organizations seeking
+                        dependable and qualified professionals.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Hire Talent <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+
+                    <span class="service-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Career Opportunities
+                    </h3>
+
+                    <p>
+                        Helping candidates identify career pathways and
+                        opportunities aligned with their ambitions.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Start Your Journey <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Service -->
+            <div class="col-lg-4 col-md-6">
+
+                <div class="service-card h-100">
+
+                    <div class="service-icon">
+                        <i class="bi bi-headset"></i>
+                    </div>
+
+                    <span class="service-number">
+                        06
+                    </span>
+
+                    <h3>
+                        Candidate Support
+                    </h3>
+
+                    <p>
+                        Dedicated guidance throughout the recruitment
+                        and placement journey.
+                    </p>
+
+                    <a href="{% url 'contact' %}"
+                       class="service-link">
+                        Contact Us <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+========================================================= -->
+<section class="py-lg-12 py-8 why-home">
+
+    <div class="container">
+
+        <div class="row align-items-center g-7">
+
+            <div class="col-lg-5">
+
+                <span class="eyebrow">
+                    Why Choose M&L Upsurge
+                </span>
+
+                <h2 class="section-title mt-3">
+                    More Than Recruitment.
+                    <span class="text-primary">
+                        A Partner For Your Journey.
+                    </span>
+                </h2>
+
+                <p class="section-lead">
+                    We believe successful recruitment is about more
+                    than filling a vacancy. It is about creating the
+                    right connection between people and opportunity.
+                </p>
+
+                <a href="{% url 'about' %}"
+                   class="btn btn-primary mt-3">
+                    Why Work With Us
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-7">
+
+                <div class="row g-4 g-lg-5">
+
+                    <div class="col-md-6">
+
+                        <div class="why-card">
+
+                            <div class="why-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+
+                            <h4>Integrity</h4>
+
+                            <p>
+                                We operate with honesty, accountability
+                                and professionalism.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="why-card">
+
+                            <div class="why-icon">
+                                <i class="bi bi-person-heart"></i>
+                            </div>
+
+                            <h4>Candidate Care</h4>
+
+                            <p>
+                                Our candidates receive practical support
+                                throughout their journey.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="why-card">
+
+                            <div class="why-icon">
+                                <i class="bi bi-globe"></i>
+                            </div>
+
+                            <h4>Global Reach</h4>
+
+                            <p>
+                                We connect Kenyan talent and businesses
+                                with opportunities beyond borders.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="why-card">
+
+                            <div class="why-icon">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+
+                            <h4>Responsive Service</h4>
+
+                            <p>
+                                We aim to make recruitment and mobility
+                                processes clear, efficient and responsive.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RECRUITMENT PROCESS — "Your Journey, Made Simpler"
+     Presented as a connected path rather than a card grid, so the
+     four steps read as one continuous route instead of four
+     separate boxes.
+========================================================= -->
+<section class="py-lg-12 py-8 journey-section bg-light">
+
+    <div class="container">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="col-lg-8">
+
+                <span class="eyebrow">
+                    How It Works
+                </span>
+
+                <h2 class="section-title mt-3">
+                    Your Journey,
+                    <span class="text-primary">
+                        Made Simpler
+                    </span>
+                </h2>
+
+                <p class="section-lead">
+                    From your first conversation to your next opportunity,
+                    we're here to guide you.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="journey-path mt-6">
+
+            <div class="journey-line" aria-hidden="true"></div>
+
+            <div class="journey-step" style="--stagger: 0px;">
+                <span class="journey-node">01</span>
+                <h4>Talk To Us</h4>
+                <p>
+                    Tell us about your goals, skills and opportunity
+                    you're looking for.
+                </p>
+            </div>
+
+            <div class="journey-step" style="--stagger: 22px;">
+                <span class="journey-node">02</span>
+                <h4>Get Matched</h4>
+                <p>
+                    We identify opportunities that align with your
+                    profile and objectives.
+                </p>
+            </div>
+
+            <div class="journey-step" style="--stagger: 4px;">
+                <span class="journey-node">03</span>
+                <h4>Prepare</h4>
+                <p>
+                    Receive guidance and support as you move through
+                    the recruitment process.
+                </p>
+            </div>
+
+            <div class="journey-step" style="--stagger: 26px;">
+                <span class="journey-node">04</span>
+                <h4>Move Forward</h4>
+                <p>
+                    Take the next step toward your career or
+                    business opportunity.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS / TRUST
+========================================================= -->
+<section class="stats-section py-8">
+
+    <div class="container">
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3 col-6">
+
+                <div class="stat-item">
+                    <strong>01</strong>
+                    <span>Dedicated Team</span>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-6">
+
+                <div class="stat-item">
+                    <strong>Global</strong>
+                    <span>Opportunity Focus</span>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-6">
+
+                <div class="stat-item">
+                    <strong>360°</strong>
+                    <span>Candidate Support</span>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 col-6">
+
+                <div class="stat-item">
+                    <strong>24/7</strong>
+                    <span>Opportunity Mindset</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+<section class="py-lg-12 py-8 final-cta-section">
+
+    <div class="container">
+
+        <div class="home-cta">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-8">
+
+                    <span class="eyebrow">
+                        Your Next Chapter
+                    </span>
+
+                    <h2>
+                        Ready to Take the
+                        <span>Next Step?</span>
+                    </h2>
+
+                    <p>
+                        Whether you're looking for your next job,
+                        international opportunity or reliable recruitment
+                        support for your business, let's start the
+                        conversation.
+                    </p>
+
+                </div>
+
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a href="{% url 'contact' %}"
+                       class="btn btn-primary btn-lg px-5">
+                        Talk to Us
+                        <span class="ms-2">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,635 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =========================================================
+         META
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="M&L Upsurge Limited - International recruitment, mobility, travel and business support solutions from Kenya.">
+
+    <meta name="keywords"
+          content="M&L Upsurge, recruitment Kenya, international recruitment, jobs abroad, recruitment agency Kenya, mobility services">
+
+    <meta name="author" content="M&L Upsurge Limited">
+
+    <title>
+        {% block title %}
+            M&L Upsurge Limited | Recruitment & Global Mobility
+        {% endblock %}
+    </title>
+
+
+    <!-- =========================================================
+         GOOGLE FONT
+         One display face, one body face — used everywhere.
+    ========================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =========================================================
+         BOOTSTRAP
+    ========================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+
+    <!-- =========================================================
+         ICONS
+         Bootstrap Icons (bi bi-*) and Font Awesome (fa-*) are both
+         used across templates, so both are loaded here once.
+    ========================================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =========================================================
+         MAIN STYLESHEET
+    ========================================================== -->
+
+    <link rel="stylesheet" href="{% static 'core/assets/css/custom.css' %}">
+
+
+    {% block extra_css %}
+    {% endblock %}
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PRELOADER
+========================================================== -->
+
+<div class="ml-preloader" id="mlPreloader">
+    <div class="ml-preloader-mark">
+        <span class="ml-preloader-ring"></span>
+        <img src="{% static 'core/assets/images/logo/logo.png' %}"
+             alt="M&L Upsurge Limited">
+    </div>
+</div>
+
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================== -->
+
+<div class="ml-topbar">
+
+    <div class="container">
+
+        <div class="ml-topbar-inner">
+
+            <div class="ml-topbar-left">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Nairobi, Kenya
+                </span>
+
+                <a href="mailto:info@mlupsurge.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    info@mlupsurge.com
+                </a>
+
+            </div>
+
+
+            <div class="ml-topbar-right">
+
+                <span>
+                    Your Gateway to Global Opportunities
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     HEADER
+========================================================== -->
+
+<header class="ml-header" id="mainHeader">
+
+    <div class="container">
+
+        <nav class="ml-navbar">
+
+
+            <!-- LOGO -->
+
+            <a href="{% url 'home' %}" class="ml-logo">
+
+                <img src="{% static 'core/assets/images/logo/logo.png' %}"
+                     alt="M&L Upsurge Limited">
+
+                <div class="ml-logo-text">
+
+                    <div class="ml-logo-name">
+                        M<span>&</span>L Upsurge
+                    </div>
+
+                    <div class="ml-logo-tagline">
+                        Global Recruitment & Mobility
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- MOBILE BUTTON -->
+
+            <button
+                class="ml-menu-toggle"
+                id="mlMenuToggle"
+                type="button"
+                aria-label="Open navigation">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="ml-nav-wrapper" id="mlNavWrapper">
+
+                <ul class="ml-nav">
+
+
+                    <li class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">
+                        <a href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+
+
+                    <li class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">
+                        <a href="{% url 'about' %}">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <li class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">
+                        <a href="{% url 'services' %}">
+                            Services
+                        </a>
+                    </li>
+
+
+                    <li class="{% if request.resolver_match.url_name == 'apply' %}active{% endif %}">
+                        <a href="{% url 'apply' %}">
+                            Apply
+                        </a>
+                    </li>
+
+
+                    <li class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">
+                        <a href="{% url 'contact' %}">
+                            Contact
+                        </a>
+                    </li>
+
+
+                    <li class="ml-nav-cta">
+
+                        <a href="{% url 'contact' %}"
+                           class="ml-btn ml-btn-primary">
+
+                            Find an Opportunity
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN CONTENT
+========================================================== -->
+
+<main>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================== -->
+
+<footer class="ml-footer">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+
+            <!-- COMPANY -->
+
+            <div class="col-lg-5">
+
+                <div class="ml-footer-brand">
+
+                    <a href="{% url 'home' %}"
+                       class="ml-footer-logo">
+
+                        <img src="{% static 'core/assets/images/logo/logo.png' %}"
+                             alt="M&L Upsurge Limited">
+
+                        <span>
+                            M<span>&</span>L Upsurge
+                        </span>
+
+                    </a>
+
+
+                    <p>
+
+                        M&L Upsurge Limited is a Kenyan international
+                        recruitment and mobility agency connecting
+                        candidates, professionals and businesses to
+                        opportunities beyond borders.
+
+                    </p>
+
+
+                    <a href="{% url 'contact' %}"
+                       class="ml-btn ml-btn-primary mt-3">
+
+                        Talk to Us
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="col-6 col-lg-2">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul class="ml-footer-links">
+
+                    <li>
+                        <a href="{% url 'home' %}">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'about' %}">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'services' %}">
+                            Services
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'apply' %}">
+                            Apply
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="{% url 'contact' %}">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="col-6 col-lg-2">
+
+                <h5>
+                    Services
+                </h5>
+
+                <ul class="ml-footer-links">
+
+                    <li>
+                        <a href="{% url 'services' %}">
+                            Recruitment
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'services' %}">
+                            Global Mobility
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'services' %}">
+                            Travel Support
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{% url 'services' %}">
+                            Business Support
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-3">
+
+                <h5>
+                    Contact Us
+                </h5>
+
+
+                <div class="ml-footer-contact">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Nairobi, Kenya
+                    </span>
+
+                </div>
+
+
+                <div class="ml-footer-contact">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <a href="tel:+211981755322">
+                        +211 981 755 322
+                    </a>
+
+                </div>
+
+
+                <div class="ml-footer-contact">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <a href="mailto:info@mlupsurge.com">
+                        info@mlupsurge.com
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="ml-footer-bottom">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+
+                    <p>
+                        © {% now "Y" %}
+                        M&L Upsurge Limited.
+                        All Rights Reserved.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-6 text-md-end">
+
+                    <p>
+                        Recruitment • Mobility • Opportunities
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     WHATSAPP
+========================================================== -->
+
+<a href="https://wa.me/211981755322"
+   class="ml-whatsapp"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with M&L Upsurge on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+========================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- =========================================================
+     NAVIGATION JS
+========================================================== -->
+
+<script>
+
+    /*
+    -----------------------------------------------
+    PRELOADER
+    -----------------------------------------------
+    */
+
+    window.addEventListener("load", function () {
+
+        const preloader =
+            document.getElementById("mlPreloader");
+
+        if (preloader) {
+
+            preloader.classList.add("is-hidden");
+
+            preloader.addEventListener("transitionend", function () {
+                preloader.remove();
+            }, { once: true });
+
+        }
+
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const menuToggle =
+            document.getElementById("mlMenuToggle");
+
+        const navWrapper =
+            document.getElementById("mlNavWrapper");
+
+        const header =
+            document.getElementById("mainHeader");
+
+
+        /*
+        -----------------------------------------------
+        MOBILE MENU
+        -----------------------------------------------
+        */
+
+        if (menuToggle && navWrapper) {
+
+            menuToggle.addEventListener("click", function () {
+
+                navWrapper.classList.toggle("show");
+
+                const icon =
+                    menuToggle.querySelector("i");
+
+                if (navWrapper.classList.contains("show")) {
+
+                    icon.classList.remove("fa-bars");
+
+                    icon.classList.add("fa-xmark");
+
+                } else {
+
+                    icon.classList.remove("fa-xmark");
+
+                    icon.classList.add("fa-bars");
+
+                }
+
+            });
+
+
+            /*
+            Close menu after clicking a link
+            */
+
+            navWrapper
+                .querySelectorAll("a")
+                .forEach(function (link) {
+
+                    link.addEventListener("click", function () {
+
+                        navWrapper.classList.remove("show");
+
+                        const icon =
+                            menuToggle.querySelector("i");
+
+                        icon.classList.remove("fa-xmark");
+
+                        icon.classList.add("fa-bars");
+
+                    });
+
+                });
+
+        }
+
+
+        /*
+        -----------------------------------------------
+        STICKY HEADER
+        -----------------------------------------------
+        */
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 30) {
+
+                header.classList.add("sticky");
+
+            } else {
+
+                header.classList.remove("sticky");
+
+            }
+
+        });
+
+    });
+
+</script>
+
+
+{% block extra_js %}
+{% endblock %}
+
+
+</body>
+
+</html>
