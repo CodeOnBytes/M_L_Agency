@@ -21,10 +21,11 @@
 
     <title>
         {% block title %}
-            M&L Upsurge Limited | Recruitment & Global Mobility
+            M&L Upsurge Limited | Recruitment Agency
         {% endblock %}
     </title>
 
+    
 
     <!-- =========================================================
          GOOGLE FONT
@@ -155,7 +156,7 @@
                     </div>
 
                     <div class="ml-logo-tagline">
-                        Global Recruitment & Mobility
+                        Global Recruitment Agency
                     </div>
 
                 </div>
@@ -207,6 +208,12 @@
                     <li class="{% if request.resolver_match.url_name == 'apply' %}active{% endif %}">
                         <a href="{% url 'apply' %}">
                             Apply
+                        </a>
+                    </li>
+
+                    <li class="{% if request.resolver_match.url_name == 'apply' %}active{% endif %}">
+                        <a href="{% url 'apply' %}">
+                            Blog
                         </a>
                     </li>
 
@@ -420,8 +427,8 @@
 
                     <i class="fa-solid fa-phone"></i>
 
-                    <a href="tel:+211981755322">
-                        +211 981 755 322
+                    <a href="tel:+254 7 000000">
+                        +254 7 000000
                     </a>
 
                 </div>

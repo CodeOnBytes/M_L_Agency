@@ -125,7 +125,10 @@ section.about-services-section,
 section.purpose-section,
 section.about-why-section,
 section.ml-values-section,
-section.about-cta-section {
+section.about-cta-section,
+section.contact-section,
+section.contact-services-section,
+section.contact-final-cta {
     padding-top: var(--ml-section-y-lg);
     padding-bottom: var(--ml-section-y-lg);
 }
