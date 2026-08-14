@@ -123,27 +123,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/6.1/howto/static-files/
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
-# THE FIX: Added 'staticfiles' to complete the path
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STORAGES = {
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage", # Changed from CompressedManifestStaticFilesStorage
     },
 }
 
-# Add this to prevent crashes if files are missing
 WHITENOISE_MANIFEST_STRICT = False
-
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
