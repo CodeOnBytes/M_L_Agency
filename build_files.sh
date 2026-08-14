@@ -1,5 +1,11 @@
 #!/bin/bash
-echo "Building project assets..."
-python3 -m pip install -r requirements.txt
-python3 manage.py collectstatic --noinput --clear
-echo "Build complete!"
+echo "==> Installing dependencies..."
+python3.12 -m pip install -r requirements.txt
+
+echo "==> Creating output directory..."
+mkdir -p staticfiles
+
+echo "==> Collecting static files..."
+python3.12 manage.py collectstatic --noinput --clear
+
+echo "==> Build complete!"
