@@ -122,18 +122,21 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    # If your custom css/js is inside core/static/, Django automatically scans it
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+# VERCEL COMPATIBILITY FIX: Tell WhiteNoise to use application finders directly
+WHITENOISE_USE_FINDERS = True
+
 STORAGES = {
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage", # Changed from CompressedManifestStaticFilesStorage
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
 
