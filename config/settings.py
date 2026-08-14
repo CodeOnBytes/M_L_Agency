@@ -126,12 +126,11 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    # If your custom css/js is inside core/static/, Django automatically scans it
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# VERCEL COMPATIBILITY FIX: Tell WhiteNoise to use application finders directly
+# Enables WhiteNoise to read from STATICFILES_DIRS at runtime
 WHITENOISE_USE_FINDERS = True
 
 STORAGES = {
@@ -141,6 +140,7 @@ STORAGES = {
 }
 
 WHITENOISE_MANIFEST_STRICT = False
+
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
