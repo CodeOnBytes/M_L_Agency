@@ -1,0 +1,48 @@
+name: 🚀 Deploy Django to cPanel
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to cPanel
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to cPanel
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_USERNAME }}
+          key: ${{ secrets.CPANEL_SSH_KEY }}
+          port: ${{ secrets.CPANEL_PORT }}
+
+          script: |
+            echo "Starting deployment..."
+
+            source /home/qwlitxir/virtualenv/ml_agency/3.11/bin/activate
+
+            cd /home/qwlitxir/ml_agency
+
+            echo "Pulling latest code..."
+            git pull origin main
+
+            echo "Installing requirements..."
+            pip install -r requirements.txt
+
+            echo "Running migrations..."
+            python manage.py migrate --noinput
+
+            echo "Collecting static files..."
+            python manage.py collectstatic --noinput
+
+            echo "Restarting Django..."
+            mkdir -p tmp
+            touch tmp/restart.txt
+
+            echo "Deployment completed successfully!"
